@@ -1,0 +1,31 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ header,
+ footer {
+     padding: 20px 15px;
+     background: linear-gradient(180deg, rgb(60, 0, 100) 0%, rgba(253, 29, 29, 1) 86%, rgb(255, 108, 0) 100%);
+     text-align: center;
+     color: #ffd6f7;
+ }
+ main {
+     background: #999;
+     padding: 10px;
+     display: grid;
+     grid-gap: 10px;
+     grid-template-columns: 1fr;
+ }
+ article {
+     background: #fff;
+     padding: 10px;
+ }
+ footer {
+     text-align: center;
+ }
+ @media screen and (min-width:768px) {
+     main {
+         grid-template-columns: repeat(3, 1fr);
+     }
+ }
